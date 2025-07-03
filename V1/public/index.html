@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank of America - Sign In</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body class="bg-light">
+  <header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <img src="images/logo.png" alt="Bank of America" height="40">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Personal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Small Business</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Wealth Management</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Locations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body p-5">
+            <h1 class="card-title text-center mb-4" style="color: #004C7D;">Sign In</h1>
+            <p class="text-center mb-4">Securely access your accounts</p>
+            <form id="loginForm" action="/login" method="POST">
+              <div class="mb-3">
+                <label for="username" class="form-label">Online ID</label>
+                <input type="text" class="form-control" id="username" name="username" placeholder="Enter your Online ID" required>
+                <div class="form-text">Case sensitive. May include letters, numbers, and special characters.</div>
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Passcode</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter your Passcode" required>
+                <div class="form-text">Keep your passcode secure and do not share it.</div>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" id="rememberMe">
+                <label class="form-check-label" for="rememberMe">Save Online ID</label>
+              </div>
+              <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-primary" style="background-color: #004C7D; border-color: #004C7D;">Sign In</button>
+              </div>
+            </form>
+            <div id="errorMessage" class="alert alert-danger mt-3 d-none" role="alert"></div>
+            <div class="text-center mt-3">
+              <a href="#" style="color: #004C7D;">Forgot Online ID or Passcode?</a>
+              <span class="mx-2">|</span>
+              <a href="#" style="color: #004C7D;">Security Center</a>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <p>Not enrolled? <a href="#" style="color: #004C7D;">Sign up now</a></p>
+          <p>Learn about <a href="#" style="color: #004C7D;">Online Banking</a> | <a href="#" style="color: #004C7D;">Mobile Banking</a></p>
+        </div>
+      </div>
+      <div class="col-md-6 d-none d-md-block">
+        <div class="card bg-light border-0">
+          <div class="card-body p-5">
+            <h5 class="card-title" style="color: #004C7D;">Bank of America Advantage Banking</h5>
+            <p class="card-text">A flexible checking account to meet your needs. No monthly maintenance fee with eligible direct deposits.</p>
+            <a href="#" class="btn btn-outline-primary" style="color: #004C7D; border-color: #004C7D;">Learn More</a>
+          </div>
+        </div>
+        <div class="card bg-light border-0 mt-3">
+          <div class="card-body p-5">
+            <h5 class="card-title" style="color: #004C7D;">Better Money Habits®</h5>
+            <p class="card-text">Start building your better financial future with resources and tools to help you succeed.</p>
+            <a href="#" class="btn btn-outline-primary" style="color: #004C7D; border-color: #004C7D;">Explore Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-white py-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="images/logo.png" alt="Bank of America" height="30" class="mb-2">
+          <p class="text-muted small">Bank of America, N.A. Member FDIC. Equal Housing Lender</p>
+          <p class="text-muted small">© 2023 Bank of America Corporation. All rights reserved.</p>
+        </div>
+        <div class="col-md-3">
+          <h6 style="color: #004C7D;">Quick Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-muted small">Privacy & Security</a></li>
+            <li><a href="#" class="text-muted small">Online Banking Service Agreement</a></li>
+            <li><a href="#" class="text-muted small">Site Map</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6 style="color: #004C7D;">Connect with Us</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-muted small">Contact Us</a></li>
+            <li><a href="#" class="text-muted small">Schedule an Appointment</a></li>
+            <li><a href="#" class="text-muted small">Find a Financial Center</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6 style="color: #004C7D;">Mobile Apps</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-muted small">Download for iPhone</a></li>
+            <li><a href="#" class="text-muted small">Download for Android</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
